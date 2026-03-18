@@ -60,53 +60,6 @@
           "default": [
             "fil.23a81d8d3dcb4b06890f08dc68c5690c"
           ]
-        },
-        "group": {
-          "type": "array",
-          "title": "Group",
-          "description": "Group",
-          "minItems": 0,
-          "maxItems": 10,
-          "items": {
-            "type": "object",
-            "properties": {
-              "age": {
-                "type": "integer",
-                "title": "Age",
-                "description": "Age",
-                "help_text": "age in years",
-                "minimum": 0,
-                "maximum": 200
-              },
-              "textbox_InGroup": {
-                "type": "array",
-                "title": "textbox_InGroup",
-                "description": "textbox_InGroup",
-                "help_text": "some textboxhelp",
-                "minItems": 0,
-                "maxItems": 3,
-                "items": {
-                  "type": "string",
-                  "minLength": 2,
-                  "maxLength": 45
-                }
-              },
-              "MultiFiles": {
-                "type": "array",
-                "title": "Multi_files",
-                "description": "Multi_files",
-                "help_text": "some TXT file selection help",
-                "minItems": 1,
-                "maxItems": 10,
-                "items": {
-                  "type": "string",
-                  "format": "file-path",
-                  "pattern": "^\\S+\\.(txt|csv)$"
-                }
-              }
-            },
-            "additionalProperties": false
-          }
         }
       },
       "additionalProperties": false
